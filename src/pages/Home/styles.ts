@@ -39,7 +39,7 @@ export const Navigator = styled.nav`
     color: #eff1ff;
 
     :hover {
-      background-color: ${shade(0.3, '#6663d4')};
+      background-color: ${shade(0.1, '#6663d4')};
     }
 
     li {
@@ -136,8 +136,8 @@ export const Body = styled.div`
     flex: 1;
 
     header {
-      height: 100px;
       width: 100%;
+      padding: 16px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -218,15 +218,12 @@ export const User = styled.div`
 `
 
 export const Content = styled.div`
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
 `
 
 export const Info = styled.div`
   flex: 1;
-  height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 40px;
@@ -268,9 +265,199 @@ export const Info = styled.div`
       border-radius: 8px;
     }
   }
+
+  .title {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      height: 35px;
+      font-size: 14px;
+      width: 100px;
+      background-color: #6663d4;
+      color: #eff1ff;
+      border: none;
+      border-radius: 32px;
+
+      &:hover{
+        background-color: ${shade(0.1, '#6663d4')};
+      }
+    }
+  }
+`
+
+export const Table = styled.div`
+  ::-webkit-scrollbar { 
+    display: none;
+  }
+
+  overflow-y: scroll;
+  flex: 1;
+
+  .tableTitle {
+    display: flex;
+    justify-content: space-between;
+
+    strong {
+      padding: 8px 16px;
+      flex: 1;
+    }
+  }
+
+  .cards {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background-color: white;
+    border-radius: 16px;
+
+    .perfil {
+      display: flex; 
+      align-items: center;
+      flex: 1; 
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      p {
+        margin-left: 16px;
+        font-size: 14px;
+      }
+    }
+
+    .designation {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      
+      .tag-red {
+        display: flex;
+        justify-content: center;
+        width: 130px;
+        margin-left: 12px;        
+        border-radius: 8px;      
+
+        p {
+          padding: 4px;           
+          font-size: 12px;
+        }
+          background-color: #fab1a0;
+          border: 1px dashed #ee5253;
+          color: #ee5253;
+        }
+
+        .tag-yellow {
+          display: flex;
+          justify-content: center;
+          width: 130px;
+          margin-left: 12px;        
+          border-radius: 8px;      
+
+        p {
+          padding: 4px;           
+          font-size: 12px;
+        }
+          background-color: #ffeaa7;
+          border: 1px dashed #fdcb6e;
+          color: #fdcb6e;
+        }
+
+        .tag-purple {
+          display: flex;
+          justify-content: center;
+          width: 130px;
+          margin-left: 12px;        
+          border-radius: 8px;      
+
+        p {
+          padding: 4px;           
+          font-size: 12px;
+        }
+          background-color: #a29bfe;
+          border: 1px dashed #6c5ce7;
+          color: #6c5ce7;
+        }
+
+        .tag-green {
+          display: flex;
+          justify-content: center;
+          width: 130px;
+          margin-left: 12px;        
+          border-radius: 8px;      
+
+        p {
+          padding: 4px;           
+          font-size: 12px;
+        }
+          background-color: #55efc4;
+          border: 1px dashed #00b894;
+          color: #00b894;
+        }
+    }
+
+    .status {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      > svg {
+        cursor: pointer;
+        color: #b2bec3;
+        margin-left: 64px;
+      }
+
+      .situation-red {
+        margin-left: 22px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #ee5253; 
+      }
+
+      .situation-yellow {
+        margin-left: 22px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #fdcb6e; 
+      }
+
+      .situation-purple {
+        margin-left: 22px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #6c5ce7; 
+      }
+
+      .situation-green {
+        margin-left: 22px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #00b894; 
+      }
+
+      p {
+        font-weight: 500;
+        margin-left: 8px;
+        width: 160px;
+      }
+    }
+  }
+
+
+
 `
 
 export const Aside = styled.aside`
   width: 35%;
-  height: 100%;
 `

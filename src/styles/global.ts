@@ -10,5 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     html, body {
         font-family: 'Poppins', sans-serif;
         background-color: #eff1ff;
+        outline: none;
+    }
+
+    button {
+        cursor: pointer;
     }
 `
