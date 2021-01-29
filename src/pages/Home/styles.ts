@@ -635,7 +635,7 @@ export const Aside = styled.aside`
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     .field {
       display: flex;
