@@ -194,8 +194,8 @@ export const User = styled.div`
   img {
     position: relative;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 32px;                   
@@ -411,7 +411,8 @@ export const Table = styled.div`
       > svg {
         cursor: pointer;
         color: #b2bec3;
-        margin-left: 64px;
+        margin-left: 40px;
+        margin-right: 20px;
       }
 
       .situation-red {
@@ -460,4 +461,106 @@ export const Table = styled.div`
 
 export const Aside = styled.aside`
   width: 35%;
+
+  .calendarTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+
+    button  {
+      margin-left: 16px;
+      width: 40px;
+      height: 28px;
+      border: none;
+      border-radius: 10px;
+      background-color: #6c5ce7;
+
+      :hover {
+        background-color: ${shade(0.1,'#6c5ce7')};
+      }
+
+      svg {
+        color: white;
+      }
+    }
+  }
+
+  .period {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    margin-top: 16px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 180px;
+      background-color: #C8BFFF;
+      border-radius: 16px;
+      padding: 4px;
+
+      p {
+        margin-left: 18px;
+        font-size: 14px;
+        color: ${shade(0.3,'#6c5ce7')};
+      }
+    }
+  }
+
+  .calendar {
+    background-color: white;
+    border-radius: 16px;
+    margin: 0 30px;
+    margin-top: 16px;
+    padding: 4px;
+
+    ul {
+      list-style-type: none;
+    }    
+
+    .weekdays {
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      font-weight: 600;
+      color: black;
+      text-align: center;
+    }
+
+    .days {
+      margin: 0;
+    }
+
+    .days li {
+      display: inline-block;
+      width: 13.6%;
+      border-radius: 50%;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size:12px;
+      color: #777;
+      cursor: pointer;
+    }
+
+    .days li .active {
+      padding: 3px 6px;
+      border-radius: 50%;
+      background: #6c5ce7;
+      color: white !important
+    }
+
+    .days li .activeYellow {
+      padding: 3px 6px;
+      border-radius: 50%;
+      background: #e99417;
+      color: white !important
+    }
+  }
+  
 `
