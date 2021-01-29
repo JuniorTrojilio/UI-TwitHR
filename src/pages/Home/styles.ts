@@ -498,7 +498,7 @@ export const Aside = styled.aside`
       justify-content: flex-start;
       width: 180px;
       background-color: #C8BFFF;
-      border-radius: 16px;
+      border-radius: 8px;
       padding: 4px;
 
       p {
@@ -562,5 +562,103 @@ export const Aside = styled.aside`
       color: white !important
     }
   }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 16px;
+    margin: 32px 30px;
+
+    .naming {
+      display: flex;
+      flex-direction: column;
+      align-items: center;      
+
+      img {
+        position: relative;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+        margin: 18px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-right: 32px; 
+        margin-top: 32px; 
+        box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;              
+      }
+
+      strong {
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        color: #999;
+      }
+    }
+  }
+
+  .bar {
+    margin-top: 16px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: #dfe6e9;
+      color: #6663d4; 
+      border-radius: 50%;
+      transition: color 0.2s;
+      cursor: pointer;
+
+      :hover {
+        background-color: ${shade(0.1, '#dfe6e9')};
+      }
+    }
+  }
+
+  hr {
+    margin:14px 0;
+    width: 85%;
+    outline: none;
+    border: 1px solid #dfe6e9;
+  }
   
+  .company {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-left: 30px;
+
+      strong {
+        margin-top: 8px;
+      }
+    }
+
+    .response {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-right: 30px;
+      color: #999;
+
+      p {
+        margin-top: 8px;
+        text-align: right;
+      }
+    }
+  }
 `

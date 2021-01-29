@@ -23,7 +23,10 @@ import {
   HiOutlineSearch,
   HiOutlineMail,
   HiOutlineBell,
-  HiDotsHorizontal
+  HiDotsHorizontal,
+  HiPhone,
+  HiMail,
+  HiChatAlt
 } from 'react-icons/hi'
 import { BsClipboardData } from 'react-icons/bs'
 import { ReactComponent as Premium } from '../../assets/Premium.svg'
@@ -242,6 +245,37 @@ const Home: React.FC = () => {
                 <li>30</li>
                 <li>31</li>
               </ul>
+            </div>
+            <div className="information">
+              <div className="naming">
+                <img src="https://scontent.fmgf4-2.fna.fbcdn.net/v/t1.0-9/43056097_1904004516350184_1585493529575030784_o.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=Gw2JOp8cJQgAX9vEqE8&_nc_ht=scontent.fmgf4-2.fna&oh=a548ea845a90f94ab70ce27d99f61d91&oe=60344CE0" alt="Mr. Junior"/>
+                <strong>Mr Junior</strong>
+                <p>Sr. HR Manager</p>
+              </div>
+              <div className="bar">
+                <div className="icon">
+                  <HiPhone size={24}/>
+                </div>
+                <div className="icon">
+                  <HiMail size={24}/>
+                </div>
+                <div className="icon">
+                  <HiChatAlt size={24}/>
+                </div>
+              </div>
+              <hr/>
+              <div className="company">
+                <div className="field">
+                  <strong>Company</strong>
+                  <strong>Joining Date</strong>
+                  <strong>Projects</strong>
+                </div>
+                <div className="response">
+                  <p>FoxHr Pvt. Ltd.</p>
+                  <p>01/08/2018</p>
+                  <p>34 Active</p>
+                </div>
+              </div>
             </div>
           </Aside>
         </Content>
