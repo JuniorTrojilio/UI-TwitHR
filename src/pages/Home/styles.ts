@@ -496,7 +496,7 @@ export const Aside = styled.aside`
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      width: 180px;
+      width: 170px;
       background-color: #C8BFFF;
       border-radius: 8px;
       padding: 4px;
